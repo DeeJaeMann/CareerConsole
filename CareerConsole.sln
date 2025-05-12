@@ -3,6 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerConsole.Core", "CareerConsole.Core\CareerConsole.Core.csproj", "{484CFF81-4901-41FC-8FEB-3B5882B317BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerConsole.Data", "CareerConsole.Data\CareerConsole.Data.csproj", "{804E3B3D-DEC5-46DE-9382-59BD6416DCD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerConsole.Data.SQLite", "CareerConsole.Data.SQLite\CareerConsole.Data.SQLite.csproj", "{6B9CFCEA-088C-4172-AD1E-0DBF46FD8162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerConsole.Console", "CareerConsole.Console\CareerConsole.Console.csproj", "{02E1CD48-C899-4485-A08B-61D19A345770}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerConsole.Data.PostgreSQL", "CareerConsole.Data.PostgreSQL\CareerConsole.Data.PostgreSQL.csproj", "{55131A0B-5765-46F7-8F9B-F244B6A1451D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerConsole.Console.Tests", "CareerConsole.Console.Tests\CareerConsole.Console.Tests.csproj", "{FB810E91-A4FF-45FF-8DCF-59141829D052}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerConsole.Core.Tests", "CareerConsole.Core.Tests\CareerConsole.Core.Tests.csproj", "{DCAEA538-E86B-4E3F-8C5E-E72435A4DFD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerConsole.Data.Tests", "CareerConsole.Data.Tests\CareerConsole.Data.Tests.csproj", "{DCDFA3C7-F160-4429-AC1A-294613973471}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerConsole.Data.SQLite.Tests", "CareerConsole.Data.SQLite.Tests\CareerConsole.Data.SQLite.Tests.csproj", "{9C47AAAD-01C0-4D90-8D23-876F6D913CF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerConsole.Data.PostgreSQL.Tests", "CareerConsole.Data.PostgreSQL.Tests\CareerConsole.Data.PostgreSQL.Tests.csproj", "{386EAE30-4760-46AC-9A64-B763A72AEB63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +30,51 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{484CFF81-4901-41FC-8FEB-3B5882B317BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{484CFF81-4901-41FC-8FEB-3B5882B317BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{484CFF81-4901-41FC-8FEB-3B5882B317BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{484CFF81-4901-41FC-8FEB-3B5882B317BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5486B6AE-5A27-45E5-9AC8-664FEE8F8995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5486B6AE-5A27-45E5-9AC8-664FEE8F8995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5486B6AE-5A27-45E5-9AC8-664FEE8F8995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5486B6AE-5A27-45E5-9AC8-664FEE8F8995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{804E3B3D-DEC5-46DE-9382-59BD6416DCD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{804E3B3D-DEC5-46DE-9382-59BD6416DCD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{804E3B3D-DEC5-46DE-9382-59BD6416DCD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{804E3B3D-DEC5-46DE-9382-59BD6416DCD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B9CFCEA-088C-4172-AD1E-0DBF46FD8162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B9CFCEA-088C-4172-AD1E-0DBF46FD8162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B9CFCEA-088C-4172-AD1E-0DBF46FD8162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B9CFCEA-088C-4172-AD1E-0DBF46FD8162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02E1CD48-C899-4485-A08B-61D19A345770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E1CD48-C899-4485-A08B-61D19A345770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E1CD48-C899-4485-A08B-61D19A345770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E1CD48-C899-4485-A08B-61D19A345770}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55131A0B-5765-46F7-8F9B-F244B6A1451D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55131A0B-5765-46F7-8F9B-F244B6A1451D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55131A0B-5765-46F7-8F9B-F244B6A1451D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55131A0B-5765-46F7-8F9B-F244B6A1451D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB810E91-A4FF-45FF-8DCF-59141829D052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB810E91-A4FF-45FF-8DCF-59141829D052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB810E91-A4FF-45FF-8DCF-59141829D052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB810E91-A4FF-45FF-8DCF-59141829D052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCAEA538-E86B-4E3F-8C5E-E72435A4DFD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCAEA538-E86B-4E3F-8C5E-E72435A4DFD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCAEA538-E86B-4E3F-8C5E-E72435A4DFD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCAEA538-E86B-4E3F-8C5E-E72435A4DFD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCDFA3C7-F160-4429-AC1A-294613973471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDFA3C7-F160-4429-AC1A-294613973471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCDFA3C7-F160-4429-AC1A-294613973471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCDFA3C7-F160-4429-AC1A-294613973471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C47AAAD-01C0-4D90-8D23-876F6D913CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C47AAAD-01C0-4D90-8D23-876F6D913CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C47AAAD-01C0-4D90-8D23-876F6D913CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C47AAAD-01C0-4D90-8D23-876F6D913CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{386EAE30-4760-46AC-9A64-B763A72AEB63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{386EAE30-4760-46AC-9A64-B763A72AEB63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{386EAE30-4760-46AC-9A64-B763A72AEB63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{386EAE30-4760-46AC-9A64-B763A72AEB63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
