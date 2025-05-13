@@ -1,5 +1,3 @@
-using System;
-using CareerConsole.Console.Services;
 using CareerConsole.Core.Interfaces;
 
 namespace CareerConsole.Console.Classes
