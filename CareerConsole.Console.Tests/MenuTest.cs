@@ -7,13 +7,6 @@ namespace CareerConsole.Console.Tests;
 
 public class MenuTest
 {
-    private readonly ITestOutputHelper _testOutputHelper;
-
-    public MenuTest(ITestOutputHelper testOutputHelper)
-    {
-        _testOutputHelper = testOutputHelper;
-    }
-
     [Fact]
     [Category("UI")]
     [Description("Test to check if the welcome message is displayed correctly.")]
@@ -21,11 +14,26 @@ public class MenuTest
     {
         MockConsole mockConsole = new();
         Menu menu = new(mockConsole);
-        const string expected = "Welcome to the Career Console!";
+        const string expected = "Welcome to Career Console!";
 
-        menu.DisplayMenu();
+        menu.DisplayWelcome();
         List<string> actual = mockConsole.WrittenLines;
 
+        Assert.Contains(expected, actual);
+    }
+
+    [Fact]
+    [Category("UI")]
+    [Description("Test to check if the menu prompt is displayed correctly.")]
+    public void MenuMessageTest()
+    {
+        MockConsole mockConsole = new();
+        Menu menu = new(mockConsole);
+        const string expected = "Please select an option: ";
+        
+        menu.DisplayMenu();
+        List<string> actual = mockConsole.WrittenLines;
+        
         Assert.Contains(expected, actual);
     }
 

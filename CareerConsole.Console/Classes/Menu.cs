@@ -13,9 +13,12 @@ namespace CareerConsole.Console.Classes
             _console = console;
         }
 
+        public void DisplayWelcome()
+        {
+            _console.WriteLine("Welcome to Career Console!");
+        }
         public void DisplayMenu()
         {
-            _console.WriteLine("Welcome to the Career Console!");
             _console.WriteLine("1. Option 1");
             _console.WriteLine("2. Option 2");
             _console.WriteLine("Q. Exit");

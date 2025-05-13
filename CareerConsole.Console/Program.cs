@@ -12,6 +12,7 @@ class Program
             Menu menu = new(console);
             string userInput = string.Empty;
             
+            menu.DisplayWelcome();
             do
             {
                 menu.DisplayMenu();
