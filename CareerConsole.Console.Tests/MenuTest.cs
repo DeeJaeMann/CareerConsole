@@ -13,9 +13,11 @@ public class MenuTest
     {
         MockConsole mockConsole = new();
         Menu menu = new(mockConsole);
+        const string expected = "Welcome to the Career Console!";
 
         menu.DisplayMenu();
+        List<string> actual = mockConsole.WrittenLines;
 
-        Assert.Contains("Welcome to the Career Console!", mockConsole.WrittenLines);
+        Assert.Contains(expected, actual);
     }
 }
