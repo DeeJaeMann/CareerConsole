@@ -1,4 +1,5 @@
-﻿using CareerConsole.Console.UI;
+﻿using System;
+using CareerConsole.Console.UI;
 using CareerConsole.Console.Services;
 
 class Program
@@ -8,7 +9,12 @@ class Program
 
         SystemConsole console = new();
         Menu menu = new(console);
+        string input = string.Empty;
 
-        menu.DisplayMenu();
+        do
+        {
+            menu.DisplayMenu();
+            input = console.ReadLine();
+        } while (input.ToLower() != "q");
     }
 }
