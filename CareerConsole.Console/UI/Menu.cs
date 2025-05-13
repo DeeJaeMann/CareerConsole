@@ -14,6 +14,9 @@ namespace CareerConsole.Console.UI
 
         public void DisplayMenu()
         {
+            /// <summary>
+            /// Displays the main menu options to the user.
+            /// </summary>
             _console.WriteLine("Welcome to the Career Console!");
             _console.WriteLine("1. Option 1");
             _console.WriteLine("2. Option 2");

@@ -2,10 +2,10 @@ namespace CareerConsole.Core.Interfaces
 {
     public interface IConsole
     {
-        /* This interface is used to abstract the console operations
-         * from the main program. This allows for easier testing and
-         * mocking of the console operations. 
-         */
+         /// <summary>
+         /// Interface for abstracting console operations. Allows for
+         /// easier testing and mocking of console operations.
+         /// </summary>
         void WriteLine(string message);
         void Write(string message);
         string ReadLine();
