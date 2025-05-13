@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel;
 using CareerConsole.Console.Tests.Classes;
 using CareerConsole.Console.Classes;
-using Xunit.Abstractions;
 
 namespace CareerConsole.Console.Tests;
 
