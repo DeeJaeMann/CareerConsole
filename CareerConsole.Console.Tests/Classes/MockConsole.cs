@@ -4,8 +4,8 @@ namespace CareerConsole.Console.Tests.Classes
 {
     public class MockConsole : IConsole
     {
-        public List<string> WrittenLines { get; } = new();
         private readonly Queue<string> _inputQueue = new();
+        public List<string> WrittenLines { get; } = new();
 
         public void WriteLine(string message) => WrittenLines.Add(message);
         public void Write(string message) => WrittenLines.Add(message);

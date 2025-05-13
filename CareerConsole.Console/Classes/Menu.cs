@@ -1,7 +1,8 @@
 using System;
+using CareerConsole.Console.Services;
 using CareerConsole.Core.Interfaces;
 
-namespace CareerConsole.Console.UI
+namespace CareerConsole.Console.Classes
 {
     public class Menu
     {
@@ -19,6 +20,14 @@ namespace CareerConsole.Console.UI
             _console.WriteLine("2. Option 2");
             _console.WriteLine("Q. Exit");
             _console.Write("Please select an option: ");
+        }
+
+        public void HandleInput(string userInput)
+        {
+            if (userInput.ToLower() == "q")
+            {
+                _console.WriteLine("Goodbye!");
+            }
         }
     }
 }
