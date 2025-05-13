@@ -1,4 +1,3 @@
-using System;
 using CareerConsole.Core.Interfaces;
 
 namespace CareerConsole.Console.Services
@@ -14,9 +13,14 @@ namespace CareerConsole.Console.Services
             System.Console.WriteLine(message);
         }
 
+        public void Write(string message)
+        {
+            System.Console.Write(message);
+        }
         public string ReadLine()
         {
-            return System.Console.ReadLine();
+            return System.Console.ReadLine()!;
         }
+
     }
 }
