@@ -54,4 +54,26 @@ public class MenuTest
 
         Assert.Contains(expected, actual);
     }
+
+    [Theory]
+    [InlineData("x")]
+    [InlineData("exit")]
+    [InlineData("invalid option")]
+    [InlineData("12345")]
+    [InlineData("\n")]
+    [Description("Test to check if invalid input generates a message")]
+    [Category("UI")]
+    public void InvalidMenuSelectionTest(string input)
+    {
+        MockConsole mockConsole = new();
+        Menu menu = new(mockConsole);
+        const string expected = "Invalid Selection!";
+        
+        mockConsole.AddInput(input);
+        menu.DisplayMenu();
+        menu.HandleInput(input);
+        List<string> actual = mockConsole.WrittenLines;
+
+        Assert.Contains(expected, actual);
+    }
 }

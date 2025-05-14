@@ -29,6 +29,10 @@ namespace CareerConsole.Console.Classes
             {
                 _console.WriteLine("Goodbye!");
             }
+            else
+            {
+                _console.WriteLine("Invalid Selection!");
+            }
         }
     }
 }
