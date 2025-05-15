@@ -6,8 +6,6 @@ class Program
 {
     static void Main(string[] args)
     {
-
-
             SystemConsole console = new();
             Menu menu = new(console);
             string userInput = string.Empty;
