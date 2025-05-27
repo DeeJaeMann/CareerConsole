@@ -13,5 +13,15 @@
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.4" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="CareerConsole.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\CareerConsole.Data\CareerConsole.Data.csproj" />
+  </ItemGroup>
 
 </Project>

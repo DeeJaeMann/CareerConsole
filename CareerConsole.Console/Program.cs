@@ -1,16 +1,22 @@
-﻿using CareerConsole.Console.UI;
+﻿using System;
+using CareerConsole.Console.Classes;
 using CareerConsole.Console.Services;
 
 class Program
 {
     static void Main(string[] args)
     {
-        // Create an instance of the SystemConsole class
-        var console = new SystemConsole();
+            SystemConsole console = new();
+            Menu menu = new(console);
+            string userInput = string.Empty;
+            
+            menu.DisplayWelcome();
+            do
+            {
+                menu.DisplayMenu();
+                userInput = console.ReadLine();
+                menu.HandleInput(userInput);
+            } while (userInput.ToLower() != "q");
         
-        // Create an instance of the Menu class and pass the console instance to it
-        var menu = new Menu(console);
-        // Display the menu
-        menu.DisplayMenu();
     }
 }
